@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'CF' target in the 'CF' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#if DEBUG
+//#if 0
+#  define LOG(...) NSLog(__VA_ARGS__)
+#  define LOG_METHOD NSLog(@"%s", __func__)
+#else
+#  define LOG(...) ;
+#  define LOG_METHOD ;
+#endif
