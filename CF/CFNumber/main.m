@@ -1,6 +1,6 @@
 //
 //  main.m
-//  CF
+//  CFNumber
 //
 //  Created by 7gano on 4/3/13.
 //  Copyright (c) 2013 7gano. All rights reserved.
@@ -10,11 +10,6 @@
 
 int main(int argc, const char * argv[])
 {
-
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, Core Foundation!");
-    }
+    CFShow(CFSTR("CFNumber"));
     return 0;
 }
-
